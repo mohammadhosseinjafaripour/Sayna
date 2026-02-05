@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ir.coolroom2.Activity.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#3b3b3b"
+            android:textSize="20dp" />
+
+        <com.andrognito.patternlockview.PatternLockView
+            android:id="@+id/lock"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            app:correctStateColor="#003e06"
+            app:wrongStateColor="#3e0000"
+            android:layout_marginBottom="40dp"
+            android:visibility="gone"
+            app:normalStateColor="#292929" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textColor="#363636"
+            android:background="#dadada"
+            android:text="@string/patternSetting"
+            android:elevation="7dp"
+            android:textSize="20dp"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/createPattern"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/list_item_foreground"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="6dp"
+            android:paddingRight="12dp"
+            android:paddingTop="6dp"
+            android:text="@string/createPattern"
+            android:textColor="#363636"
+            android:textSize="20dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/renewPattern"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/list_item_foreground"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="6dp"
+            android:paddingRight="12dp"
+            android:paddingTop="6dp"
+            android:text="@string/changePattern"
+            android:textColor="#363636"
+            android:textSize="20dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/deletePattern"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:background="@drawable/list_item_foreground"
+            android:gravity="right|center_vertical"
+            android:paddingBottom="6dp"
+            android:paddingRight="12dp"
+            android:paddingTop="6dp"
+            android:text="@string/deletePattern"
+            android:textColor="#363636"
+            android:textSize="20dp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+
+</RelativeLayout>

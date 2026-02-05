@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:background="#282727"
+    android:contentInsetEnd="0dp"
+    android:contentInsetLeft="0dp"
+    android:contentInsetRight="0dp"
+    android:contentInsetStart="0dp"
+    app:contentInsetEnd="0dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetRight="0dp"
+    app:contentInsetStart="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="0.2"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo_small_2" />
+
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:paddingLeft="-15dp"
+            android:text="atis-cool.ir"
+            android:textColor="#fff"
+            android:textSize="18dp"
+            android:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/menubtn"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="12dp"
+            android:layout_weight="0.1"
+            android:foreground="@drawable/ripple"
+            android:padding="6dp"
+            app:srcCompat="@drawable/ic_menu_black_24dp" />
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.Toolbar>

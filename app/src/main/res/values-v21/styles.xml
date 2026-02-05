@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="StyledTilEditTextTheme">
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:colorAccent">@color/textinput</item>
+        <item name="colorControlNormal">@color/textinput</item>
+        <item name="colorControlActivated">@color/textinput</item>
+        <item name="android:textColorPrimary">@color/textinput</item>
+    </style>
+</resources>

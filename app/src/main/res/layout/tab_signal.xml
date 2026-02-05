@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.13"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                style="@style/narrow_row"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:padding="3dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/R"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    app:srcCompat="@drawable/ic_brightness_1_black_24dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:text="R"
+                    android:textAppearance="@style/TextAppearance.FontPathView2"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/narrow_row"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:padding="3dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/S"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    app:srcCompat="@drawable/ic_brightness_1_black_24dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:text="S"
+                    android:textAppearance="@style/TextAppearance.FontPathView2"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/narrow_row"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="0.33"
+                android:gravity="center"
+                android:padding="3dp"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/T"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    app:srcCompat="@drawable/ic_brightness_1_black_24dp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:gravity="center"
+                    android:text="T"
+                    android:textAppearance="@style/TextAppearance.FontPathView2"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                style="@style/narrow_row"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/info_box"
+                android:gravity="center"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/signal_compressor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="جریان کمپرسور"
+                    android:textColor="@color/gray"
+                    android:textSize="12dp"  />
+
+                <ImageView
+                    android:id="@+id/signal_comperssor_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/success_gray_small" />
+
+                <TextView
+                    android:id="@+id/compressor_mode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="OFF"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/narrow_row"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/info_box"
+                android:gravity="center"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/signal_ovaperator"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="جریان اواپراتور"
+                    android:textColor="@color/gray"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/signal_ovaperator_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/success_gray_small" />
+
+                <TextView
+                    android:id="@+id/ovaperator_mode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="OFF"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/narrow_row"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/info_box"
+                android:gravity="center"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/signal_oil"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="فشار روغن"
+                    android:textColor="@color/gray"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/signal_oil_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/success_gray_small" />
+
+                <TextView
+                    android:id="@+id/oil_mode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="OFF"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/narrow_row"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/info_box"
+                android:gravity="center"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/signal_highgass"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="فشار گازبالا"
+                    android:textColor="@color/gray"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/signal_highgas_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/success_gray_small" />
+
+                <TextView
+                    android:id="@+id/mode_highgass"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="OFF"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/narrow_row"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/info_box"
+                android:gravity="center"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/signal_lowgas"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="فشار گازپایین"
+                    android:textColor="@color/gray"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/signal_lowgas_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/success_gray_small" />
+
+                <TextView
+                    android:id="@+id/lowgas_mode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="OFF"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                style="@style/narrow_row"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/info_box"
+                android:gravity="center"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/signal_brodat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="برودت"
+                    android:textColor="@color/gray"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/borodat_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/success_gray_small" />
+
+                <TextView
+                    android:id="@+id/brodat_mode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="OFF"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/narrow_row"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/info_box"
+                android:gravity="center"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/signal_termostat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ترموستات"
+                    android:textColor="@color/gray"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/termostat_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/success_gray_small" />
+
+                <TextView
+                    android:id="@+id/termostat_mode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="OFF"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/narrow_row"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/info_box"
+                android:gravity="center"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/signal_defrost"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="دیفراست"
+                    android:textColor="@color/gray"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/defrost_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/success_gray_small" />
+
+                <TextView
+                    android:id="@+id/defrost_mode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="OFF"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/narrow_row"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/info_box"
+                android:gravity="center"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/phase_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="کنترل فاز"
+                    android:textColor="@color/gray"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/phase_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/success_gray_small" />
+
+                <TextView
+                    android:id="@+id/phase_mode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="OFF"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/narrow_row"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="3dp"
+                android:layout_weight="0.2"
+                android:background="@drawable/info_box"
+                android:gravity="center"
+                android:padding="3dp">
+
+                <TextView
+                    android:id="@+id/compressor_overLoad_mode_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="اورلود کمپرسور"
+                    android:textColor="@color/gray"
+                    android:textSize="12dp" />
+
+                <ImageView
+                    android:id="@+id/compressor_overLoad_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/success_gray_small" />
+
+                <TextView
+                    android:id="@+id/compressor_overLoad_mode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:text="OFF"
+                    android:textColor="@color/gray" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

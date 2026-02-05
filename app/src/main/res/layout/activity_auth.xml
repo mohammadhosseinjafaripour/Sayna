@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ir.coolroom2.Activity.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#19191d"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="الگوی جاری را رسم نمایید."
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <com.andrognito.patternlockview.PatternLockView
+            android:id="@+id/lock"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_marginBottom="40dp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minWidth="280dp"
+    android:maxWidth="280dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#004299"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ویرایش اطلاعات سردخانه"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="350dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:id="@+id/roomName_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textColor="@color/textinput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="نام سردخانه" />
+
+                        <EditText
+                            android:id="@+id/roomName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:gravity="right"
+                            android:lines="1"
+                            android:maxLines="1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/roomNumber_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textColor="@color/textinput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="شماره سرد خانه" />
+
+                        <EditText
+                            android:id="@+id/roomNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:gravity="right"
+                            android:inputType="phone"
+                            android:lines="1"
+                            android:maxLength="11"
+                            android:maxLines="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/roomLocation_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textColor="@color/textinput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="مکان سردخانه" />
+
+                        <EditText
+                            android:id="@+id/roomLocation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:clickable="false"
+                            android:focusable="false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/roomProductType_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textColor="@color/textinput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="نوع محصولات" />
+
+                        <EditText
+                            android:id="@+id/roomProductType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:clickable="false"
+                            android:focusable="false" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/roomDescription_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:textColor="@color/textinput"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="توضیح محصولات" />
+
+                        <EditText
+                            android:id="@+id/roomDescription"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:gravity="right"
+                            android:lines="3"
+                            android:maxLines="3" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/roomUnderZero_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RadioGroup
+                            android:id="@+id/roomUnderZero_rg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/roomUnderZero_rg_over_zero"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:button="@null"
+                                android:clickable="false"
+                                android:drawableRight="?android:listChoiceIndicatorSingle"
+                                android:text="بالای صفر" />
+
+                            <RadioButton
+                                android:id="@+id/roomUnderZero_rg_under_zero"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5"
+                                android:button="@null"
+                                android:clickable="false"
+                                android:drawableRight="?android:listChoiceIndicatorSingle"
+                                android:text="زیر صفر" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/dimension_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/info_box"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="4dp"
+                                android:layout_weight="0.4"
+                                android:background="@drawable/info_box"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.4"
+                                    android:background="@drawable/info_box_header"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="ضخامت"
+                                        android:textAppearance="@style/TextAppearance.FontPathView.Text"
+                                        android:textColor="#fff"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+
+                                <EditText
+                                    android:id="@+id/Thickness"
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="0dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginRight="2dp"
+                                    android:layout_weight="0.6"
+                                    android:background="@drawable/editborder"
+                                    android:clickable="false"
+                                    android:focusable="false"
+                                    android:gravity="center"
+                                    android:hint="سانتی متر"
+                                    android:orientation="horizontal"
+                                    android:textAlignment="center"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="4dp"
+                                android:layout_weight="0.4"
+                                android:background="@drawable/info_box"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.4"
+                                    android:background="@drawable/info_box_header"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="ارتفاع"
+                                        android:textAppearance="@style/TextAppearance.FontPathView.Text"
+                                        android:textColor="#fff"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+
+                                <EditText
+                                    android:id="@+id/Height"
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="0dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginRight="2dp"
+                                    android:layout_weight="0.6"
+                                    android:background="@drawable/editborder"
+                                    android:clickable="false"
+                                    android:focusable="false"
+                                    android:gravity="center"
+                                    android:hint="متر"
+                                    android:orientation="horizontal"
+                                    android:textAlignment="center"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="4dp"
+                                android:layout_weight="0.4"
+                                android:background="@drawable/info_box"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.4"
+                                    android:background="@drawable/info_box_header"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="عرض"
+                                        android:textAppearance="@style/TextAppearance.FontPathView.Text"
+                                        android:textColor="#fff"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+
+                                <EditText
+                                    android:id="@+id/Width"
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="0dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginRight="2dp"
+                                    android:layout_weight="0.6"
+                                    android:background="@drawable/editborder"
+                                    android:clickable="false"
+                                    android:focusable="false"
+                                    android:gravity="center"
+                                    android:hint="متر"
+                                    android:orientation="horizontal"
+                                    android:textAlignment="center"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="4dp"
+                                android:layout_weight="0.4"
+                                android:background="@drawable/info_box"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.4"
+                                    android:background="@drawable/info_box_header"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="طول"
+                                        android:textAppearance="@style/TextAppearance.FontPathView.Text"
+                                        android:textColor="#fff"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+
+                                <EditText
+                                    android:id="@+id/length"
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="0dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginRight="2dp"
+                                    android:layout_weight="0.6"
+                                    android:background="@drawable/editborder"
+                                    android:clickable="false"
+                                    android:focusable="false"
+                                    android:gravity="center"
+                                    android:hint="متر"
+                                    android:orientation="horizontal"
+                                    android:textAlignment="center"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:background="@drawable/info_box_header_right"
+                            android:gravity="center"
+                            android:text="ابعاد سردخانه"
+                            android:textColor="#ffffff"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/power_linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/info_box"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.26"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="4dp"
+                                android:layout_weight="0.4"
+                                android:background="@drawable/info_box"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.4"
+                                    android:background="@drawable/info_box_header"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="اواپراتور"
+                                        android:textAppearance="@style/TextAppearance.FontPathView.Text"
+                                        android:textColor="#fff"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+
+                                <EditText
+                                    android:id="@+id/ovaperator"
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="0dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginRight="2dp"
+                                    android:layout_weight="0.6"
+                                    android:background="@drawable/editborder"
+                                    android:clickable="false"
+                                    android:focusable="false"
+                                    android:gravity="center"
+                                    android:hint="HP"
+                                    android:orientation="horizontal"
+                                    android:textAlignment="center"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.26"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="4dp"
+                                android:layout_weight="0.4"
+                                android:background="@drawable/info_box"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.4"
+                                    android:background="@drawable/info_box_header"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="کندانسور"
+                                        android:textAppearance="@style/TextAppearance.FontPathView.Text"
+                                        android:textColor="#fff"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+
+                                <EditText
+                                    android:id="@+id/condonsor"
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="0dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginRight="2dp"
+                                    android:layout_weight="0.6"
+                                    android:background="@drawable/editborder"
+                                    android:clickable="false"
+                                    android:focusable="false"
+                                    android:gravity="center"
+                                    android:hint="HP"
+                                    android:orientation="horizontal"
+                                    android:textAlignment="center"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.26"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_margin="4dp"
+                                android:layout_weight="0.4"
+                                android:background="@drawable/info_box"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.4"
+                                    android:background="@drawable/info_box_header"
+                                    android:gravity="center">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="کمپرسور"
+                                        android:textAppearance="@style/TextAppearance.FontPathView.Text"
+                                        android:textColor="#fff"
+                                        android:textSize="10dp" />
+
+                                </LinearLayout>
+
+                                <EditText
+                                    android:id="@+id/compressor"
+                                    android:layout_width="match_parent"
+
+                                    android:layout_height="0dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:layout_marginLeft="2dp"
+                                    android:layout_marginRight="2dp"
+                                    android:layout_weight="0.6"
+                                    android:background="@drawable/editborder"
+                                    android:clickable="false"
+                                    android:focusable="false"
+                                    android:gravity="center"
+                                    android:hint="HP"
+                                    android:orientation="horizontal"
+                                    android:textAlignment="center"
+                                    android:textSize="13sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.2"
+                            android:background="@drawable/info_box_header_right"
+                            android:gravity="center"
+                            android:text="توان سردخانه"
+                            android:textColor="#ffffff"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/info_header"
+                android:text="ویرایش"
+                android:textColor="#fff" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/info_header"
+                android:backgroundTint="#ce3737"
+                android:text="لغو"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

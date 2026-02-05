@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#1eff0e</color>
+    <color name="white">#fff</color>
+    <color name="tabCurrent">#243184</color>
+    <color name="ntabCurrent">#4155d7</color>
+    <color name="disable">#efefef</color>
+    <color name="firstTabSelectedColor">#1eff0e</color>
+
+    <color name="textinput">#2b85c6</color>
+    <color name="warningColor">#ffa600</color>
+
+    <color name="blue">#2b85c6</color>
+    <color name="yellow">#cfc803</color>
+    <color name="green">#dd00b500</color>
+    <color name="red">#fb4343</color>
+
+    <color name="gray">#9B9B9B</color>
+
+</resources>

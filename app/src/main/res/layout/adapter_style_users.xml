@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imgStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/shield_restriction" />
+
+        <LinearLayout
+            android:id="@+id/showDetails"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="1dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="6dp"
+            android:paddingTop="1dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/deleteForEverBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left|center_vertical"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="10dp"
+                android:src="@drawable/ic_x_mark" />
+
+            <ImageView
+                android:id="@+id/editBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left|center_vertical"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic_edit_black_24dp" />
+
+            <ImageView
+                android:id="@+id/view_eye"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="left|center_vertical"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="10dp"
+                app:srcCompat="@drawable/ic_view" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/NameAndFamily"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.33"
+                    android:drawablePadding="8dp"
+                    android:drawableRight="@drawable/ic_person_black_24dp"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="2dp"
+                    android:text="نام نام خانوادگی"
+                    android:textColor="#090909" />
+
+                <TextView
+                    android:id="@+id/userInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.33"
+                    android:drawablePadding="8dp"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="2dp"
+                    android:text="سمت"
+                    android:textColor="#090909" />
+
+                <TextView
+                    android:id="@+id/phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_weight="0.33"
+                    android:drawablePadding="8dp"
+                    android:drawableRight="@drawable/ic_ac_unit_black_24dp"
+                    android:gravity="right|center_vertical"
+                    android:text="شماره موبایل"
+                    android:textColor="#090909" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/listDivider" />
+
+</LinearLayout>

@@ -1,0 +1,164 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+
+
+    </style>
+
+    <style name="narrow_row">
+        <item name="android:background">@drawable/info_box</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!--jfp Custom Style-->
+
+
+    <style name="CustomTheme" parent="@android:style/Theme">
+        <item name="android:tabWidgetStyle">@style/CustomTabWidget</item>
+    </style>
+
+    <style name="CustomTabWidget" parent="@android:style/Widget.TabWidget">
+        <item name="android:textAppearance">@style/CustomTabWidgetText</item>
+    </style>
+
+    <style name="CustomTabWidgetText" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!--font-->
+
+    <style name="TextAppearance.FontPath" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">font/digital.ttf</item>
+        <item name="android:textColor">#444</item>
+    </style>
+
+    <style name="TextAppearance.FontPathView" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">font/digital.ttf</item>
+        <item name="android:textColor">#444</item>
+    </style>
+
+    <style name="TextAppearance.FontPathView.Text" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">font/iransans.ttf</item>
+        <item name="android:textColor">#444</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Button" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">font/iransans.ttf</item>
+        <item name="android:textColor">#444</item>
+    </style>
+
+    <style name="TextAppearance.FontPath2" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">font/cataneo.ttf</item>
+        <item name="android:textColor">#444</item>
+    </style>
+
+    <style name="TextAppearance.FontPathView2" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">font/cataneo.ttf</item>
+        <item name="android:textColor">#444</item>
+    </style>
+
+
+    <!--Toggle Button-->
+
+    <style name="Widget.Button.Toggle" parent="android:Widget">
+        <item name="android:background">@drawable/ic_toggle_bg</item>
+        <item name="android:disabledAlpha">?android:attr/disabledAlpha</item>
+    </style>
+
+    <style name="toggleButton" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:buttonStyleToggle">@style/Widget.Button.Toggle</item>
+        <item name="android:textOn"></item>
+        <item name="android:textOff"></item>
+    </style>
+
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="NegativeButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#ff0000</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">#000000</item>
+    </style>
+
+
+    <style name="spinner_style">
+        <item name="android:background">@drawable/spinner_bg</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingTop">2.5dp</item>
+        <item name="android:paddingBottom">2.5dp</item>
+    </style>
+
+
+    <style name="StyledTilEditTextTheme">
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:singleLine">true</item>
+        <item name="colorControlNormal">@color/textinput</item>
+        <item name="colorControlActivated">@color/textinput</item>
+        <item name="android:textColorPrimary">@color/textinput</item>
+    </style>
+
+    <style name="StyledTilEditText">
+        <item name="android:theme">@style/StyledTilEditTextTheme</item>
+        <item name="android:paddingTop">4dp</item>
+    </style>
+
+
+    <style name="EditScreenTextInputLayoutStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/textinput</item>
+        <item name="colorControlNormal">@color/textinput</item>
+        <item name="colorControlActivated">@color/textinput</item>
+        <item name="colorControlHighlight">@color/textinput</item>
+        <item name="colorPrimary">@color/textinput</item>
+        <item name="colorPrimaryDark">@color/textinput</item>
+        <item name="android:labelTextSize">30dp</item>
+
+        <item name="colorAccent">@color/textinput</item>
+        <item name="android:textColorHint">@color/textinput</item>
+    </style>
+
+
+    <style name="SearchView">
+
+        <item name="floatingSearch_menuItemIconColor">#000000</item>
+
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textColor">@color/textinput</item>
+    </style>
+
+    <style name="SelectableItemTheme">
+        <item name="colorControlHighlight">#caffffff</item>
+    </style>
+    <style name="SelectableItemBackground">
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+</resources>
